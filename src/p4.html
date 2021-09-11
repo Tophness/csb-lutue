@@ -54,7 +54,7 @@
 	//const filea = new File([new Blob([JSON.stringify(mdec2)], {type:"application/json"})], "model.json", {type:"application/json"});
         //const filesa = new File([new Blob([b64_to_utf8(wdec22)], {type:"application/json"})], "group1-shard1of5");
         //await faceapi.loadTinyFaceDetectorModel(tf.io.browserFiles([filea, filesa]));
-	var nweights = new Float32Array([mdec2, b64_to_utf8(wdec22)]);
+	var nweights = new Float32Array(mdec2);
         await faceapi.loadTinyFaceDetectorModel(nweights);
         modelLoaded = true;
 
