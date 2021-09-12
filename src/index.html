@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="../dist/face-api.js"></script>
-    <script src="public/commons.js"></script>
-    <link rel="stylesheet" href="public/styles.css" />
+    <script src="https://lutue.csb.app/dist/face-api.js"></script>
+    <script src="https://lutue.csb.app/src/public/commons.js"></script>
+    <link rel="stylesheet" href="https://lutue.csb.app/src/public/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css"
@@ -53,7 +53,7 @@
       <!--
         <div id="status">Click Image to load its model </div>
         <div style="padding:20px" style="border:1px solid #000000;">
-            <a id="lnk" onclick="loadModel('../../weights/mobilenetV1_models/model.json')" href="#">load</a>
+            <a id="lnk" onclick="loadModel('https://lutue.csb.app/https://lutue.csb.app/weights/mobilenetV1_models/model.json')" href="#">load</a>
         </div>
 -->
       <center>
@@ -133,7 +133,7 @@
         for (var i = 0; i < emotion_labels.length; i++) {
           eimages[i] = document.createElement("img");
           eimages[i].id = "emoji";
-          eimages[i].src = "emojis/" + emotion_labels[i] + ".png";
+          eimages[i].src = "https://lutue.csb.app/src/emojis/" + emotion_labels[i] + ".png";
         }
       }
 
@@ -254,7 +254,7 @@
 
       async function run() {
         const Model_url =
-          "../models/tiny_face_detector/tiny_face_detector_model-weights_manifest.json";
+          "https://lutue.csb.app/models/tiny_face_detector/tiny_face_detector_model-weights_manifest.json";
         await faceapi.loadTinyFaceDetectorModel(Model_url);
         modelLoaded = true;
 
@@ -271,7 +271,7 @@
       }
 
       $(document).ready(function () {
-        loadModel("../models/mobilenetv1_models/model.json");
+        loadModel("https://lutue.csb.app/models/mobilenetv1_models/model.json");
 
         const sizeTypeSelect = $("#sizeType");
         sizeTypeSelect.val(sizeType);
