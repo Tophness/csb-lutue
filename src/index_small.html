@@ -18,15 +18,7 @@
 <title>Face2React</title>
   </head>
 
-  <body>
-  <input name='sizeType' type='hidden' value='160'>
-  <input disabled value="-" id="time" type="hidden" />
-  <input disabled value="-" id="fps" type="hidden" />
-  <center>
-        <div id="react">
-          <div id="emoji_txt"></div>
-        </div>
-  </center>
+  <body><div id="react"><div id="emoji_txt"></div></div>
     <div style="position: relative; visibility: hidden;" class="margin">
       <video onplay="onPlay(this)" id="inputVideo" autoplay muted></video>
       <canvas id="overlay" />
